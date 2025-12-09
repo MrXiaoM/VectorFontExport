@@ -10,6 +10,23 @@ base {
 	archivesName = project.archives_base_name
 }
 
+loom {
+    accessWidenerPath.set(file("src/main/resources/vectorfontexport.accesswidener"))
+    mixin {
+        useLegacyMixinAp = true
+        defaultRefmapName = "vectorfontexport-refmap.json"
+    }
+    runs {
+        client {
+            programArgs.addAll(["--username", "LittleCatX"])
+            vmArgs.add("-Dmixin.debug.export=true")
+            environment = "client"
+            runDir = "run"
+            client()
+        }
+    }
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because

@@ -1,28 +1,33 @@
 {
-	"schemaVersion": 1,
-	"id": "vectorfontexport",
-	"version": "${version}",
-	"name": "VectorFontExport",
-	"description": "A tool to export font from Minecraft.",
-	"authors": [ "MrXiaoM" ],
-	"contact": {
-		"homepage": "https://plugins.mcio.dev/elopers/vd/intro",
-		"sources": "https://github.com/MrXiaoM/VectorFontExport"
-	},
-	"license": "AGPL-3.0",
-	"icon": "assets/vectorfontexport/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [ "top.mrxiaom.vector.font.VectorFontExport" ]
-	},
-	"mixins": [
-		"vectorfontexport.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.18.1",
-		"minecraft": "~1.20.4",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {}
+  "schemaVersion": 1,
+  "id": "vectorfontexport",
+  "version": "${version}",
+  "name": "VectorFontExport",
+  "description": "A tool to export font from Minecraft.",
+  "authors": [
+    "MrXiaoM"
+  ],
+  "contact": {
+    "homepage": "https://plugins.mcio.dev/elopers/vd/intro",
+    "sources": "https://github.com/MrXiaoM/VectorFontExport"
+  },
+  "license": "AGPL-3.0",
+  "icon": "assets/vectorfontexport/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.mrxiaom.vector.font.VectorFontExport"
+    ]
+  },
+  "accessWidener": "vectorfontexport.accesswidener",
+  "mixins": [
+    "vectorfontexport.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {}
 }
